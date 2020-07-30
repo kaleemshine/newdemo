@@ -1,0 +1,3 @@
+az group create --name RG3 --location northeurope
+az vm create --resource-group RG4 --name VM2 --image win2016datacenter --admin-username user01
+az vm open-port --port 80 --resource-group RG4 --name VM2

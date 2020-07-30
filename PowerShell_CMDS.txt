@@ -1,0 +1,207 @@
+PS C:\Windows\System32> $psversiontable
+
+Name                           Value
+----                           -----
+PSVersion                      7.1.0-preview.3
+PSEdition                      Core
+GitCommitId                    7.1.0-preview.3
+OS                             Microsoft Windows 10.0.18363
+Platform                       Win32NT
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0…}
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+WSManStackVersion              3.0
+
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32> Get-AzResourceGroup
+
+ResourceGroupName : cloud-shell-storage-centralindia
+Location          : centralindia
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/cloud-shell-storage-centralindia
+
+ResourceGroupName : RG111
+Location          : eastus
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG111
+
+ResourceGroupName : RG1
+Location          : northeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG1
+
+ResourceGroupName : RG2
+Location          : northeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG2
+
+ResourceGroupName : NetworkWatcherRG
+Location          : northeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/NetworkWatcherRG
+
+
+PS C:\Windows\System32> Connect-AzAccount
+WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code GPJVYYR89 to authenticate.
+
+Account              SubscriptionName TenantId                             Environment
+-------              ---------------- --------                             -----------
+sdyasir273@gmail.com Free Trial       751e40fb-0fb3-4080-b16f-239faa116202 AzureCloud
+
+PS C:\Windows\System32>
+PS C:\Windows\System32> Get-AzResourceGroup
+
+ResourceGroupName : cloud-shell-storage-centralindia
+Location          : centralindia
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/cloud-shell-storage-centralindia
+
+ResourceGroupName : RG111
+Location          : eastus
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG111
+
+ResourceGroupName : RG1
+Location          : northeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG1
+
+ResourceGroupName : RG2
+Location          : northeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG2
+
+ResourceGroupName : NetworkWatcherRG
+Location          : northeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/NetworkWatcherRG
+
+
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32> New-AzResourceGroup -Name  'RG3' -Location 'northeurope'
+
+ResourceGroupName : RG3
+Location          : northeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG3
+
+
+PS C:\Windows\System32> Get-AzResourceGroup -Name RG*
+
+ResourceGroupName : RG111
+Location          : eastus
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG111
+
+ResourceGroupName : RG1
+Location          : northeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG1
+
+ResourceGroupName : RG2                                                                                                                                                 Location          : northeurope                                                                                                                                         ProvisioningState : Succeeded                                                                                                                                           Tags              :                                                                                                                                                     ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG2                                                                                                                                                                                                                                                      ResourceGroupName : RG3                                                                                                                                                 Location          : northeurope                                                                                                                                         ProvisioningState : Succeeded                                                                                                                                           Tags              :                                                                                                                                                     ResourceId        : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG3                                                                                                                                                                                                                                                                                                                                                                                                                              PS C:\Windows\System32>                                                                                                                                                 PS C:\Windows\System32>                                                                                                                                                 PS C:\Windows\System32>                                                                                                                                                 PS C:\Windows\System32>                                                                                                                                                 PS C:\Windows\System32>                                                                                                                                                 PS C:\Windows\System32>                                                                                                                                                 PS C:\Windows\System32>                                                                                                                                                 PS C:\Windows\System32>                                                                                                                                                 PS C:\Windows\System32>                                                                                                                                                 PS C:\Windows\System32> New-AzVM -ResourceGroupName 'RG3' -Name ^C
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32> Get-AzVM
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32> New-AzVM -ResourceGroupName 'RG3' -Name 'VM1' -VirtualNetworkName 'vnet01' -SubnetName 'subnet01' -PublicIpAddressName 'public1' -OpenPorts 3389,80
+
+cmdlet New-AzVM at command pipeline position 1
+Supply values for the following parameters:
+Credential
+User: sdyasir273
+Password for user sdyasir273: **********
+
+
+
+ResourceGroupName        : RG3
+Id                       : /subscriptions/d3e2ac51-f5be-42ff-8ca1-9cef504a9ab5/resourceGroups/RG3/providers/Microsoft.Compute/virtualMachines/VM1
+VmId                     : 7b11d936-a8fb-4c62-828d-68e8c465a8df
+Name                     : VM1
+Type                     : Microsoft.Compute/virtualMachines
+Location                 : northeurope
+Tags                     : {}
+HardwareProfile          : {VmSize}
+NetworkProfile           : {NetworkInterfaces}
+OSProfile                : {ComputerName, AdminUsername, WindowsConfiguration, Secrets, AllowExtensionOperations, RequireGuestProvisionSignal}
+ProvisioningState        : Succeeded
+StorageProfile           : {ImageReference, OsDisk, DataDisks}
+FullyQualifiedDomainName : vm1-0d14c2.northeurope.cloudapp.azure.com
+
+
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32> Get-AzVM
+
+ResourceGroupName Name    Location          VmSize  OsType NIC ProvisioningState Zone
+----------------- ----    --------          ------  ------ --- ----------------- ----
+RG3                VM1 northeurope Standard_DS1_v2 Windows VM1         Succeeded
+
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32> New-AzVM -ResourceGroupName 'RG3' -Name 'VM1' -VirtualNetworkName 'vnet01' -SubnetName 'subnet01' -PublicIpAddressName 'public1' -OpenPorts 3389,80
+
+cmdlet New-AzVM at command pipeline position 1
+Supply values for the following parameters:
+Credential
+User:
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32> Get-AzVM
+
+ResourceGroupName Name    Location          VmSize  OsType      NIC ProvisioningState Zone
+----------------- ----    --------          ------  ------      --- ----------------- ----
+RG3                VM1 northeurope Standard_DS1_v2 Windows      VM1         Succeeded
+RG3                VM2 northeurope Standard_DS1_v2 Windows VM2VMNic         Succeeded
+
+PS C:\Windows\System32>
+PS C:\Windows\System32>
+PS C:\Windows\System32> Stop-AzVM -ResourceGroupName RG3 -Name VM1
+
+Virtual machine stopping operation
+This cmdlet will stop the specified virtual machine. Do you want to continue?
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
+
+OperationId : 8846d170-d622-4ef2-882e-406d02733c01
+Status      : Succeeded
+StartTime   : 7/5/2020 9:10:39 PM
+EndTime     : 7/5/2020 9:12:04 PM
+Error       :
+
+
+PS C:\Windows\System32>
+PS C:\Windows\System32> Stop-AzVM -ResourceGroupName RG3 -Name VM2
+
+Virtual machine stopping operation
+This cmdlet will stop the specified virtual machine. Do you want to continue?
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
+
